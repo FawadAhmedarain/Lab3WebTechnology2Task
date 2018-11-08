@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#a {
+    border: 10px dotted black;
+    padding: 15px;
+    background: lightblue;
+    background-clip: border-box;    
+}
+#b {
+    border: 10px double black;
+    padding: 25px;
+    background-repeat: no-repeat;
+    background-origin: padding-box;
+}
+body{
+	background-color: #FFCC99;
+  
+    background-position: center; 
+background-size: auto;
+}
+h1{
+    border-bottom: 5px solid blue;
+    border-style: solid;
+    border-bottom-color: red;
+}
+h2 {
+    border-bottom: 4px dotted blue;
+    border-left: 4px solid blue;
+}
+h3{
+	border-bottom: double;
+}
+
+#c {
+    border: 2px solid red;
+    padding: 10px;
+    border-bottom-left-radius: 50px 20px;
+}
+#d { 
+    border: 10px solid transparent;
+    padding: 15px;
+    border-image: url(border.png) 30 stretch; 
+   border-image-outset: 5px;
+   border-image-repeat: repeat;
+       }
+   #e{
+   	 border: 10px solid transparent;
+    padding: 15px;
+    border-image: url(bor.png) 30 stretch; 
+border-image-slice: 20%;
+   }
+   table, td, th {
+    border: 1px solid black;
+     border-collapse: separate;
+    border-spacing: 15px;
+}
+
+#f {
+    border: 1px solid black;
+    padding: 10px;
+    box-shadow: 5px 10px #888888;
+}
+</style>
+</head>
+<body>
+
+<h1>Use back groung properties</h1>
+<div id="a">
+<p>In Wt lab we have 6 group members.</p>
+</div>
+<h2>background-origin: padding-box :</h2>
+<div id="b">
+<h3>Semester 7</h3>
+<p>Studied web technology</p>
+</div>
+<div id="c">
+<p>Jeto Pakistan</p>
+</div>
+<p id="d">Here, the image is stretched to fill the area.</p>
+<p id="e">Border image slice.</p>
+<table id="table1">
+  <tr>
+    <th>Name</th>
+    <th>Roll no</th>
+  </tr>
+  <tr>
+    <td>Fawad Ahmed</td>
+    <td>16sw01</td>
+  </tr>
+  <tr>
+    <td>Awais Qurashi</td>
+    <td>16sw173</td>
+  </tr>
+</table>
+
+<div id="f">
+<p>Box shadow property use</p>
+</div>
+
+</body>
+</html>
